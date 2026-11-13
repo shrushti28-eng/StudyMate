@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fcddbc;
+    padding: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0001;
+}
+
+h1 {
+    color: #5546a5;
+    margin-bottom: 10px;
+}
+
+p {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+button {
+    background: #5546a5;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #392e80;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-info {
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete {
+    background: #e74c3c;
+}
+
+#progress {
+    margin-top: 25px;
+    color: #5546a5;
+}

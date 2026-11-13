@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>StudyMate</h1>
+        <p>Your personal study planner</p>
+
+        <div class="task-form">
+            <input type="text" id="taskInput"
+                placeholder="Enter your study task">
+
+            <input type="date" id="taskDate">
+
+            <select id="priority">
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <h2>My Tasks</h2>
+
+        <div class="filters">
+            <button onclick="filterTasks('All')">All</button>
+            <button onclick="filterTasks('Pending')">Pending</button>
+            <button onclick="filterTasks('Completed')">Completed</button>
+        </div>
+
+        <div id="taskList"></div>
+
+        <h3 id="progress">Completed: 0 / 0</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
